@@ -10,3 +10,7 @@ const notesSchema = new mongoose.Schema({
         required : true
     }
 })
+
+const notesModel = mongoose.model("notes", notesSchema)
+
+module.exports = notesModel
